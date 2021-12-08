@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .show_popup{
+            width: 180px;
+            height: 30px;
+            background: cadetblue;
+            position: absolute;
+            top : -1000px;
+            left: 10px;
+        }
+        .showed_popup{
+            position: fixed;
+            top: 100px;
+        }
+        .menu{
+            min-height: 20px;
+            background: lavender;
+        }
+        .hidden{
+            overflow: hidden;
+            height: 0px;
+
+        }
+        .wrap{
+            border: solid 2px darkblue;
+            margin: 5px;
+            padding: 10px;
+        }
+        .title {
+            border: solid .5px black;
+            margin: 2px;
+            padding: 5px;
+        }
+        .body_style {
+            /*min-height: 18px;*/
+            border: solid .5px black;
+            margin: 2px;
+            padding: 5px;
+            transition: .5s;
+        }
+        .hidden_body{
+            height: 0px;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+<div id='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, repellendus!</div>
+<button id = 'btn1'>remove text</button>
+
+<hr>
+
+<input type="number" id = 'age'>
+<button id = 'btn2'>check age</button>
+<div class="show_popup more18"> вік більше 18 </div>
+<div class="show_popup less18"> вік менше або рівне 18 </div>
+
+<hr>
+
+<ul class="menu">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+</ul>
+
+
+<script src="main.js"></script>
+</body>
+</html>
