@@ -10,7 +10,7 @@
 //     До кожного товару додати кнопку, при кліку на яку з лс видаляється конкретний обраний  товар
 //
 
-
+let close = document.getElementById('close');
 let f1 = document.forms.f1;
 f1.onsubmit = function (e){
     e.preventDefault();
@@ -26,6 +26,8 @@ f1.onsubmit = function (e){
     console.log(products);
     products.push (currenyProduct);
     localStorage.setItem('products',JSON.stringify(products));
+    document.f1.reset();
+    document.getElementsByClassName('popup_hidden')[0].classList.toggle('popup_showed');
 }
 
 

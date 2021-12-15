@@ -30,6 +30,8 @@ for (const product of products) {
         console.log(key);
         products.splice(key,1);
         localStorage.setItem('products',JSON.stringify(products));
+        let deleteItem = document.getElementsByClassName('wrap__container')[key];
+        deleteItem.remove();
     });
     divProduct.append(productName,productAmount,productPrice,productLink,productButton);
     wrapContainer.append(divProduct);
