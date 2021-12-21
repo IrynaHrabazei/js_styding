@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*body{*/
+        /*    margin: 10px;*/
+        /*    display: flex;*/
+        /*    justify-content: center;*/
+        /*}*/
+        .user__wraper{
+            margin: 20px;
+            padding: 20px;
+            width: 90%;
+            border: solid 2px gray;
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .user__id{
+            padding: 5px;
+            font-family: "Times New Roman";
+            color: midnightblue;
+            font-style: oblique;
+            font-size: 20px;
+        }
+        .user__name{
+            padding: 7px;
+            font-size: 15px;
+            font-family: "Times New Roman";
+            color: darkblue;
+            font-style:oblique;
+        }
+        .user__Address__info{
+            padding: 7px;
+            font-size: 12px;
+            font-family: "Times New Roman";
+            color: darkblue;
+            font-style:italic;
+        }
+        .user__address, .post__title{
+            padding: 7px;
+            font-size: 15px;
+            font-family: "Times New Roman";
+            color: darkblue;
+            font-style:oblique;
+        }
+        .user__id span, .user__name span, .user__address span, .post__title span{
+            color: black;
+            text-decoration: underline;
+        }
+        .post__container{
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .post__wrap{
+            width: 16%;
+            margin: 10px;
+            padding: 10px;
+            border: solid 2px lightslategray;
+            border-radius: 15px;
+            box-shadow: 10px 10px 5px lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<button id = 'back_to_users'>Назад до переліку користувачів</button>
+
+<script src="user-details.js"></script>
+</body>
+</html>
