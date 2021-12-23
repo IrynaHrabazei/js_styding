@@ -172,6 +172,30 @@ for (let i = 0; i < someNumbers.length; i++) {
 // - Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
 let emptyarr = [];
 for (let i = 0; i < someNumbers.length; i++) {
-
-
+    emptyarr.push(someNumbers[i]);
+    console.log(emptyarr[i]);
 }
+
+// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+let wordArr = [ 'a', 'b', 'c'];
+let someWord1 = '';
+for (const item of wordArr) {
+    someWord1 = someWord1.concat(item)
+}
+console.log(someWord1);
+
+// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+let someWord2 = '';
+let i =0;
+while (i<wordArr.length){
+    someWord2 = someWord2.concat(wordArr[i]);
+    i++;
+}
+console.log(someWord2);
+
+// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+let someWord3 = '';
+for (i=0; i<wordArr.length; i++){
+    someWord3 = someWord3.concat(wordArr[i]);
+}
+console.log(someWord3);
