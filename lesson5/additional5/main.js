@@ -38,6 +38,16 @@ let fn = (arr, index)=>{
     return arr;
 }
 console.log(fn(array, someIndex));
+//Method 2
+let fnn = (arr, index) =>{
+    let aa = arr[index];
+    // let bb = arr[index+1];
+    arr[index] = arr[index+1];
+    console.log(arr[index + 1]);
+    arr[index+1] = aa;
+    return arr;
+}
+console.log(fnn(array, someIndex));
 
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
 //     Двожина масиву від 2 до 100
@@ -59,3 +69,4 @@ let fn1 = (arr) =>{
     return arr;
 }
 console.log(fn1(someLongArr));
+
