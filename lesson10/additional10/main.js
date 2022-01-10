@@ -22,6 +22,24 @@ divBlock.onclick = function(){
     document.getElementsByClassName('popup_hidden')[0].classList.toggle('popup_showed');
 }
 
-    // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
+// Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
+// *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
+
+// let highlight = document.getElementById('highlight');
+// highlight.onmousedown = function (){
+//     highlight.onmousemove = function (e){
+//         let start = e.clientX.toString();
+//         let end = e.clientY.toString();
+//
+//     }
+// }
+// highlight.onmouseup = function (){
+//     highlight.onmousemove = null;
+// }
+
+
+
+
+
 
 
