@@ -85,4 +85,5 @@ async function dayShedule (){
     console.log(shoppingResult);
     console.log(homeResult);
 }
+
 dayShedule()

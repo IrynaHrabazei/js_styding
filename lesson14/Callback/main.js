@@ -95,6 +95,7 @@ wakeUp(true, (error, success)=>{
                                 console.log('OOps, no rest today');
                             } else
                                 console.log(successOfhome);
+
                         })
                     })
                 })

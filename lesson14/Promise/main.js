@@ -68,6 +68,7 @@ function goHome (){
     })
 }
 
+
 wakeUp(true)
     .then (result => {
         console.log(result);
